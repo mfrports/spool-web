@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spool Privacy</title>
+<meta name="description" content="Spool collects nothing. What it reads on a page, and what it sends when it saves a video, stays between your Mac and that site.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="bar"><a class="brand" href="./"><img src="icon.png" alt="" width="28" height="28">Spool</a><nav><a href="support.html">Support</a></nav></header>
+<main class="page">
+  <h1>Privacy</h1>
+  <p class="lede">Spool collects nothing. No account, no analytics, no tracking. What it sees and what it saves stay on your Mac.</p>
+
+  <h2>What the extension reads</h2>
+  <p>On the pages you visit, Spool's Safari extension looks for video: the players on the page and the requests it makes for video streams and files. It keeps what it finds for that tab while the tab is open, so its button can list it, and forgets it when you leave the page. It never reads what you type, and it sends nothing anywhere until you ask it to save a video.</p>
+
+  <h2>When you save a video</h2>
+  <p>Spool's app on your Mac fetches the video straight from the site that serves it, as Safari would: with the page as referrer and the cookies Safari already has for that site, so the site lets you have what you can already watch. Those cookies are only kept in memory for that download and are never written to disk or sent anywhere else. The video goes into the folder you chose, and Spool's list of downloads stays in its own folder on your Mac.</p>
+  <ul>
+    <li><strong>Pages read with yt-dlp.</strong> If you have yt-dlp on your Mac, Spool may ask it to read a page whose video only the site's own player can reach. yt-dlp runs on your Mac and talks only to that site.</li>
+    <li><strong>Pasted links.</strong> A link you paste into Spool is fetched by your Mac, from the site it points to, and by nothing else.</li>
+  </ul>
+
+  <h2>Apple</h2>
+  <p>You buy Spool through the App Store, so Apple handles the purchase under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. If you have chosen to share analytics with app developers in your Mac's settings, Apple may pass us anonymous crash reports and usage figures. We use them only to fix and improve Spool.</p>
+
+  <h2>Children</h2>
+  <p>Spool collects no data from anyone, children included.</p>
+
+  <h2>Changes</h2>
+  <p>If this ever changes, this page will say so first, with the date. Last updated 24 November 2026.</p>
+
+  <h2>Contact</h2>
+  <p>Erik Muffler, Switzerland. Questions about privacy are welcome <a href="https://github.com/mfrports/spool-web/issues/new">here</a>.</p>
+</main>
+<footer class="foot">© 2026 Erik Muffler · <a href="privacy.html">Privacy</a> · <a href="support.html">Support</a></footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+/* Spool's site: warm paper, near-black ink, and thread (mulberry), as in the app (Views/Theme.swift). */
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap");
+
+:root {
+  --paper: #F0EDE7; --panel: #F6F4EF; --card: #FCFBF8; --ink: #1C1B19;
+  --ink2: rgba(28, 27, 25, .64); --ink3: rgba(28, 27, 25, .44); --hair: rgba(28, 27, 25, .09);
+  --glow: #8E3B73; --glow-wash: rgba(142, 59, 115, .10);
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #1B1A18; --panel: #22211F; --card: #2A2926; --ink: #EDEAE4;
+    --ink2: rgba(237, 234, 228, .64); --ink3: rgba(237, 234, 228, .44); --hair: rgba(237, 234, 228, .09);
+    --glow: #D78EC0; --glow-wash: rgba(215, 142, 192, .16);
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #1B1A18; --panel: #22211F; --card: #2A2926; --ink: #EDEAE4;
+  --ink2: rgba(237, 234, 228, .64); --ink3: rgba(237, 234, 228, .44); --hair: rgba(237, 234, 228, .09);
+  --glow: #D78EC0; --glow-wash: rgba(215, 142, 192, .16);
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--glow); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+code { font: 14px ui-monospace, "SF Mono", Menlo, monospace; background: var(--glow-wash); padding: 1px 6px; border-radius: 6px; word-break: break-all; }
+
+.bar { display: flex; align-items: center; justify-content: space-between; max-width: 1080px; margin: 0 auto; padding: 20px 16px; }
+.brand { display: flex; align-items: center; gap: 10px; font: 600 22px/1 Newsreader, "New York", Georgia, serif; color: var(--ink); }
+.brand:hover { text-decoration: none; }
+.bar nav a { color: var(--ink2); margin-left: 20px; font-size: 15px; }
+
+.page { max-width: 680px; margin: 0 auto; padding: 24px 16px 64px; }
+h1, h2, .display { font-family: Newsreader, "New York", Georgia, serif; font-weight: 600; letter-spacing: -0.01em; }
+h1 { font-size: clamp(40px, 8vw, 56px); line-height: 1.05; margin: 24px 0 16px; }
+h2 { font-size: 24px; line-height: 1.25; margin: 40px 0 8px; }
+.lede { font-size: 20px; color: var(--ink2); margin: 0 0 8px; }
+p, li { color: var(--ink2); }
+strong { color: var(--ink); font-weight: 600; }
+ul { padding-left: 20px; }
+li { margin: 10px 0; }
+
+.foot { text-align: center; color: var(--ink3); font-size: 14px; padding: 32px 16px 48px; border-top: 1px solid var(--hair); }
+.foot a { color: var(--ink3); }
+
+/* The landing page */
+.hero { text-align: center; padding: 40px 16px 0; }
+.hero img.icon { width: 112px; height: 112px; filter: drop-shadow(0 10px 18px rgba(58, 50, 38, .18)); }
+.hero h1 { font-size: clamp(44px, 9vw, 88px); margin: 16px auto 16px; max-width: 900px; }
+.hero h1 em { font-style: normal; color: var(--glow); }
+.hero .lede { max-width: 620px; margin: 0 auto 28px; }
+.buy { display: inline-flex; flex-direction: column; align-items: center; gap: 10px; }
+.buy .price { color: var(--ink3); font-size: 15px; }
+.badge { display: inline-block; background: var(--ink); color: var(--paper); border-radius: 12px; padding: 12px 22px; font-weight: 600; }
+.badge:hover { text-decoration: none; opacity: .92; }
+.shot { max-width: 1080px; margin: 48px auto 0; padding: 0 16px; }
+.shot img { width: 100%; height: auto; border-radius: 14px; box-shadow: 0 30px 60px -20px rgba(58, 50, 38, .35), 0 0 0 1px var(--hair); }
+.rows { max-width: 1080px; margin: 0 auto; padding: 24px 16px 64px; display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.row { background: var(--card); border-radius: 14px; padding: 22px; box-shadow: 0 1px 0 var(--hair); }
+.row h3 { font: 600 20px/1.25 Newsreader, "New York", Georgia, serif; margin: 0 0 6px; color: var(--ink); }
+.row p { margin: 0; font-size: 15px; }
