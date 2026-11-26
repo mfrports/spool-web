@@ -3,13 +3,13 @@
     <channel>
         <title>Spool</title>
         <item>
-            <title>1.0</title>
-            <pubDate>Wed, 25 Nov 2026 01:44:40 +0100</pubDate>
+            <title>1.1</title>
+            <pubDate>Thu, 26 Nov 2026 01:42:11 +0100</pubDate>
             <link>https://mfrports.github.io/spool-web/</link>
-            <sparkle:version>202611250142</sparkle:version>
-            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:version>202611260140</sparkle:version>
+            <sparkle:shortVersionString>1.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/mfrports/spool-web/releases/download/v1.0/Spool.dmg" length="32616145" type="application/octet-stream" sparkle:edSignature="821n07pYgECuRI1IUq32tlW4x2uPo8WpzMIil+guFWnAf4iHIogBiInbJSRAr2mlVsJ8yYApfzUmfWTYDWd6Cw=="/>
+            <enclosure url="https://github.com/mfrports/spool-web/releases/download/v1.1/Spool.dmg" length="32651519" type="application/octet-stream" sparkle:edSignature="3V6e0CvVE+H9od5ZltFptGphbMKz2IMr8bN6rkUgu/LEn58Dhg2krPL2wuHtGp0Rde0Uvm/rDvdHNn9zXKocAg=="/>
         </item>
     </channel>
 </rss>
