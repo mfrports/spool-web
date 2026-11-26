@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Spool: save the videos you watch</title>
-<meta name="description" content="Play a video in Safari, click once, and keep it on your Mac as a file. Streams, live broadcasts and plain files, in the best quality there is.">
+<meta name="description" content="Play a video in Safari, click once, and keep it on your Mac as a file. Streams, live broadcasts, plain files, and YouTube, Vimeo and some 1800 more sites, in the best quality there is. Free.">
 <meta property="og:title" content="Spool: every video, saved">
-<meta property="og:description" content="Play a video in Safari, click once, and keep it on your Mac as a file. In the best quality there is.">
+<meta property="og:description" content="Play a video in Safari, click once, and keep it on your Mac as a file. In the best quality there is. Free.">
 <meta property="og:image" content="https://mfrports.github.io/spool-web/og.jpg">
 <link rel="icon" href="icon.png">
 <link rel="stylesheet" href="site.css">
@@ -17,18 +17,31 @@
   <section class="hero">
     <img class="icon" src="icon.png" alt="Spool's icon, a record pressed into paper">
     <h1>Every video.<br><em>Saved.</em></h1>
-    <p class="lede">Play a video in Safari, click Spool in the toolbar, and keep it on your Mac as a file: streams, live broadcasts and plain files, in the best quality there is.</p>
+    <p class="lede">Play a video in Safari, click Spool in the toolbar, and keep it on your Mac as a file: streams, live broadcasts and plain files, and YouTube, Vimeo and some 1800 more sites, in the best quality there is.</p>
     <div class="buy">
-      <span class="badge">Coming to the Mac App Store</span>
-      <span class="price">Free. No subscription, no account.</span>
+      <a class="badge" href="https://github.com/mfrports/spool-web/releases/latest/download/Spool.dmg">Download Spool for Mac</a>
+      <span class="price">Free. No subscription, no account. macOS 26 or later, on a Mac with Apple silicon.</span>
     </div>
   </section>
   <div class="shot"><img src="shot-hero.jpg" alt="Spool's window: a film coming in, a live broadcast being recorded, and the downloads of the day"></div>
   <section class="rows">
     <div class="row"><h3>One click in Safari</h3><p>Spool finds the video on the page, in every quality it comes in, and says how big each will be.</p></div>
+    <div class="row"><h3>Some 1800 sites</h3><p>YouTube, Vimeo, Twitch, the public broadcasters: Spool reads each the way its player does, picks the best picture QuickTime plays, and keeps the original sound.</p></div>
     <div class="row"><h3>Streams of every kind</h3><p>HLS, DASH and plain files, fetched several pieces at a time and joined without re-encoding.</p></div>
     <div class="row"><h3>Live, as it happens</h3><p>A broadcast is recorded from when you start until you stop, and kept in one file.</p></div>
+    <div class="row"><h3>Nothing to install</h3><p>yt-dlp, the Python it runs on and FFmpeg come inside Spool. No Homebrew, no Terminal, nothing else on your Mac is touched.</p></div>
+    <div class="row"><h3>Always current</h3><p>Sites change their players every few weeks. Spool fetches each new yt-dlp from its makers, checks it and tries it before using it, and updates itself too.</p></div>
+    <div class="row"><h3>Notarized by Apple</h3><p>Signed and checked by Apple, so it opens with a double click.</p></div>
     <div class="row"><h3>Copy protection respected</h3><p>DRM protected video is shown as protected and left alone. Spool never decrypts anything.</p></div>
+  </section>
+  <section class="page steps">
+    <h2>Getting started</h2>
+    <ol>
+      <li>Open <strong>Spool.dmg</strong> and drag Spool into <strong>Applications</strong>.</li>
+      <li>Open Spool once. Its window says what to do next.</li>
+      <li>In Safari choose <strong>Settings › Extensions</strong>, tick <strong>Spool</strong> and allow it on every website.</li>
+    </ol>
+    <p>Save only what you have the right to keep.</p>
   </section>
 </main>
 <footer class="foot">© 2026 Erik Muffler · <a href="privacy.html">Privacy</a> · <a href="support.html">Support</a></footer>
